@@ -29,11 +29,11 @@ Participants material is available on : http://ibm.biz/ISEN_Workshop
 
 This workshop has been created based on various sources
 
-https://console.bluemix.net/docs/services/visual-recognition/getting-started.html#getting-started-tutorial
-https://console.bluemix.net/docs/services/visual-recognition/tutorial-custom-classifier.html#creating-a-custom-model
-https://watson-developer-cloud.github.io/watson-vision-coreml-code-pattern/
-https://github.com/IBM/watson-vehicle-damage-analyzer
-https://github.com/hanleyweng/CoreML-in-ARKit
++ https://console.bluemix.net/docs/services/visual-recognition/getting-started.html#getting-started-tutorial
++ https://console.bluemix.net/docs/services/visual-recognition/tutorial-custom-classifier.html#creating-a-custom-model
++ https://watson-developer-cloud.github.io/watson-vision-coreml-code-pattern/
++ https://github.com/IBM/watson-vehicle-damage-analyzer
++ https://github.com/hanleyweng/CoreML-in-ARKit
 
 and William Griffith's lab
 
