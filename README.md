@@ -4,9 +4,9 @@
 
 Visual Recognition is  already  used  broadly,  from  detecting  a  specific  type  of  plants,  counting chickens,  automatic  processing  of  car  damage  claims  in insurance  or  for  self-driving  cars  to  give  a  few examples.
 
-This repository contains the exercices of the IBM Watson Visual Recognition Advance Workshop
+This repository contains the exercises of the IBM Watson Visual Recognition Advance Workshop
 
-This workshop of 1 day and half allows clients and partners to understand how IBM Watson Visual Recognition on IBM Cloud can augment existing applications by providing cognitive capabilities. 
+This workshop of 1 day and half allows clients and partners to understand how IBM Watson Visual Recognition on IBM Cloud can augment existing applications by providing cognitive capabilities.
 
 The workshop includes lectures, discussions on how Watson Visual Recognition service works, and hands-on  exercises that participants can use to better understand what the service does, what it doesn’t do, and how it works so that students can accurately identify opportunities where Watson Visual Recognition will add  value  to  potential  solutions.  
 
@@ -23,7 +23,7 @@ At the end of this workshop, students will have covered the following topics:
 - Develop Visual Recognition applications with Node-Red
 - Existing usages and extended considerations
 
-Participants material is available on : http://ibm.biz/WVRAdvance
+Participants material is available on : http://ibm.biz/ISEN_Workshop
 
 ## References :
 
