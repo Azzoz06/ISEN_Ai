@@ -54,3 +54,6 @@ https://github.com/IBM/crypto-discovery-news-sentiment-analysis/blob/master/READ
 + Create a cognitive moderator chatbot for anger detection, natural language understanding and explicit images removal
 https://github.com/IBM/cognitive-moderator-service/blob/master/README.md
 ![](assets/markdown-img-paste-20190108002522884.png)
+
+## Watson Assistant
++ How to build a Chatbot: https://cognitiveclass.ai/courses/how-to-build-a-chatbot/
