@@ -18,7 +18,11 @@ The workshop covers a series of NLP technologies:
 ## Watson Natural Language Classifier
 
 + Lab for Watson Natural Language Classifier can be found [here](Lab1-Natural_Language_Classifier.md)
-  This Lab will walk you through the creation of a Classifier to categorize **Job Offers** from the New York City Open Data.
+  This Lab will walk you through the creation of a Classifier to categorize **Job Offers** from the New York City Open Data.  
+
+
++ Get Started with AI in 15 Minutes Using Text Classification on **AirBnb** reviews  
+https://medium.com/ibm-watson/get-started-with-ai-in-15-minutes-28039853e6f3
 
 ## Watson Natural Language Understanding
 + This **Code Pattern** demonstrates a methodology to integrate structured data & unstructured data to generate recommendations for Human Resources to better spot talents.  
@@ -32,6 +36,9 @@ https://github.com/IBM/visualize-unstructured-data-with-watson/blob/master/READM
 + In this **Code Pattern** you will use several Watson services to showcase how media (both audio and video) can be enriched on a timeline basis.
 https://github.com/IBM/watson-multimedia-analyzer/blob/master/README.md
 ![](assets/markdown-img-paste-20190108002138489.png)
+
++ Check out all other resources from the **IBM Watson Natural Understanding** documentation at https://console.bluemix.net/docs/services/natural-language-understanding/additional-resources.html#additional-resources
+
 
 ## Watson Discovery and Knowledge studio
 + This **Code Pattern** will walk you though the process of creating and application to discover customer sentiment from product reviews.
