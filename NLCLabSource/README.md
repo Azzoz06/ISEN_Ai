@@ -17,7 +17,7 @@ The workshop covers a series of NLP technologies:
 
 ## Watson Natural Language Classifier
 
-+ Lab for Watson Natural Language Classifier can be found [here](../Lab1-Natural_Language_Classifier.md)
++ Lab for Watson Natural Language Classifier can be found [here](Lab1-Natural_Language_Classifier.md)
   This Lab will walk you through the creation of a Classifier to categorize **Job Offers** from the New York City Open Data.
 
 ## Watson Natural Language Understanding
