@@ -8,7 +8,7 @@ The workshop covers a series of NLP technologies:
 
 ---
 **Mandatory Labs are:**
-+ The Watson Natural Language Classifier lab: [here](../Lab1-Natural_Language_Classifier.md)
++ The Watson Natural Language Classifier lab: [here](Lab1-Natural_Language_Classifier.md)
 + The Watson Discovery and Knowledge Studio lab: [../watson-discovery-food-reviews/README.md](https://github.com/Azzoz06/watson-food-review)  
 
 
