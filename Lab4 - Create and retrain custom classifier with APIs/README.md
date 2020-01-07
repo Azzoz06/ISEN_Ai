@@ -1,6 +1,6 @@
 
 
-# Visual Recognition Workshop 
+# Visual Recognition Workshop
 
 # Lab 4 : Create and retrain custom classifiers with APIs with command line
 
@@ -8,7 +8,7 @@
 
 After you analyze an image in the "Lab 3 : Using Visual Recognition APIs with command line" lab, you are ready to train and create a custom model. With a custom model, you can train the  Visual Recognition service to classify images to suit your business needs.
 
-Like in "**Lab2 - Create custom classifier with UI**", we will train Watson to detect that a customer's pizza is messed up (e.g. burned, toppings pushed to one side, cheese stuck to the box, etc.) versus a pizza that isn't. 
+Like in "**Lab2 - Create custom classifier with UI**", we will train Watson to detect that a customer's pizza is messed up (e.g. burned, toppings pushed to one side, cheese stuck to the box, etc.) versus a pizza that isn't.
 
 The goal is to illustrate how to use APIs to train and retrain custom models automatically. We will create with Command Line Interface (CLI) a new model called PizzaConditionModel_CLI.
 
@@ -20,13 +20,13 @@ Then follow the "**Before you begin**" from "**Lab 3 : Using Visual Recognition 
 ## 1 - Creating a custom model
 Visual Recognition can learn from example images you upload to create a new, multi-faceted model. Each example file is trained against the other files in that call, and positive examples are stored as classes. These classes are grouped to define a single model, and return their own scores. Negative example files are not stored as classes.
 
-The syntax is the following : 
+The syntax is the following :
 
 ```bash
 curl -X POST -u "apikey:{your_api_key}" --form "{class1}_positive_examples=@{file1.zip}" --form "{class2}_positive_examples=@{file2.zip}" --form "negative_examples=@{negatives.zip}" --form "name={modelname}" "https://gateway.watsonplatform.net/visual-recognition/api/v3/classifiers?version=2018-03-19"
 ```
 
-where : 
+where :
 
  `{your_api_key}` is the service credentials you copied in the first step.
 
@@ -75,7 +75,7 @@ Go to `Lab4/Lab4 - Training Set` folder (you unzipped it from Lab_Material.zip)
         ],
         "core_ml_enabled": true
     }
-    
+
     ```
 
 1. Check the training status periodically until you see a status of `ready`. Training begins immediately and must finish before you can query the model. Replace `{your_api_key}` and `{classifier_id}` with your information:
@@ -113,7 +113,7 @@ When the new model is ready, call it to see how it performs.
 
    ![1528707010508](assets/1528707010508.png)
 
-2. Use the `POST /v3/classify` method to test your custom model. The following example classifies the `pizza1.jpg` image against your custom model 
+2. Use the `POST /v3/classify` method to test your custom model. The following example classifies the `pizza1.jpg` image against your custom model
 
    - Replace `{your_api_key}` with the service credentials you copied in the first step.
    - Replace `{your_classifier_id}` with the id copied from previous step.
@@ -150,7 +150,7 @@ When the new model is ready, call it to see how it performs.
 
    To classify against multiple classifiers, update the list of classifier_ids as needed.
 
-   For example, to classify `pizza2.jpg`  with both your custom model **and** food (beta) model use : 
+   For example, to classify `pizza2.jpg`  with both your custom model **and** food (beta) model use :
 
    ![1528706947738](assets/1528706947738.png)
 
@@ -158,7 +158,7 @@ When the new model is ready, call it to see how it performs.
    curl -X POST -u "apikey:{your_api_key}" --form "images_file=@pizza1.jpg" --form "classifier_ids={your_classifier_id},food" "https://gateway.watsonplatform.net/visual-recognition/api/v3/classify?version=2018-03-19"
    ```
 
-   
+
 
    ```json
    {
@@ -207,10 +207,10 @@ When the new model is ready, call it to see how it performs.
        "images_processed": 1,
        "custom_classes": 2
    }
-   
+
    ```
 
-   Review your results. 
+   Review your results.
 
 ## 3 - Updating an existing custom model
 
@@ -249,7 +249,7 @@ You must supply at least one set of positive or negative examples.
         ],
         "core_ml_enabled": true
     }
-    
+
     ```
     Training begins immediately. When the new one is available, the status changes to `ready`.
 
@@ -280,7 +280,7 @@ You must supply at least one set of positive or negative examples.
         "retrained": "2018-06-11T09:00:02.705Z",
         "core_ml_enabled": true
     }
-    
+
     ```
 
 
@@ -340,7 +340,7 @@ You should have 2 custom models. The one created interractively with the Visual 
 
 We will now delete the custom model we just created to keep only the first custom model created with the tooling. We will reuse it in following labs.
 
-To delete the model, call the `DELETE /v3/classifiers/{classifier_id}` method. Replace `{your_api_key)` and `classifier_id` with your information. 
+To delete the model, call the `DELETE /v3/classifiers/{classifier_id}` method. Replace `{your_api_key)` and `classifier_id` with your information.
 
 Be sure to select the classifier_id starting with : **<u>PizzaConditionModel_CLI</u>**
 
@@ -351,4 +351,13 @@ You're done! You created, trained, retrained, queried and deleted a custom model
 
 All SDKs available in various languages and platform  (Java, Node.js, Python, .NET, Swift, Android, Unity, OpenWhisk, Salesforce (APEX) ) are wrappers around these methods.
 
-For Swift, the Watson Swift SDK support offline images classification using Apple CoreML. It will be detailled in a later lab.
+For Swift, the Watson Swift SDK support offline images classification using Apple CoreML. It will be detailed in a later lab.
+
+
+Use Object Detection
+====================
+
+Based on the instruction and the product documentation, train a model so that pizzas are recognized and localized on your images.
+This is your challenge!!
+
+Documentation to use **Custom Object Detection** is available here: https://cloud.ibm.com/docs/services/visual-recognition?topic=visual-recognition-object-detection-overview

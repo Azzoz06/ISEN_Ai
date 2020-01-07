@@ -170,11 +170,3 @@ Now let's explore the food model.
 
 
     Therefore, let's examine how easy it is to teach Watson something that consumer oriented AI doesn't do.
-
-Use Object Detection
-====================
-
-Based on the instruction and the product documentation, train a model so that pizzas are recognized and localized on your images.
-This is your challenge!!
-
-Documentation to use **Custom Object Detection** is available here: https://cloud.ibm.com/docs/services/visual-recognition?topic=visual-recognition-object-detection-overview
